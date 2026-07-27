@@ -10,12 +10,12 @@ It is very important for insurance and healthcare organizations to accurately es
 - Pricing strategies
 - Customer segmentation
 - Financial planning
-- Risk assessment
+- Risk assessment<br>
 The main objective of this project is to determine whether medical insurance costs can be predicted given an individual's characteristics.
 
 ---
 ## Dataset
-The data was sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance)
+The data was sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
 It contains 1,338 records that describe policyholders through:
 | Variable | Description                                          |
 | -------- | ---------------------------------------------------- |
@@ -29,20 +29,20 @@ It contains 1,338 records that describe policyholders through:
 
 ---
 ## Project Workflow
-**1. Data Validation**
+**1. Data Validation**<br>
 Dataset inspection
 Data type verification
 Missing value assessment
 Duplicate record detection
 
-**2. Data Cleaning**
+**2. Data Cleaning**<br>
 Performed necessary cleaning operations to improve data quality before analysis and modeling.
 
-**3. Feature Engineering**
+**3. Feature Engineering**<br>
 Additional variables were created solely to support exploratory data analysis and were not used during model training.
 
 **4. Exploratory Data Analysis**
-**Univariate Analysis**
+**Univariate Analysis**<br>
 Explored the distribution of:
 - Age
 - BMI
@@ -50,7 +50,7 @@ Explored the distribution of:
 - Smoking Status
 - Insurance Charges
 
-**Bivariate Analysis**
+**Bivariate Analysis**<br>
 Investigated relationships between:
 - Region vs Charges
 - BMI Category vs Charges
@@ -61,7 +61,7 @@ Investigated relationships between:
 - Number of Children vs Charges
 - BMI Category vs Age Group
 
-**Multivariate Analysis**
+**Multivariate Analysis**<br>
 Examined complex interactions among variables using:
 - Age Group, Smoker, and Charges
 - Region, Smoker, and Charges
@@ -78,7 +78,7 @@ Examined complex interactions among variables using:
 - Categorical variable encoding
 - Native categorical handling for CatBoost
 
-**6. Baseline Model Development**
+**6. Baseline Model Development**<br>
 The following regression models were trained and compared:
 - Linear Regression
 - Ridge Regression
@@ -88,35 +88,35 @@ The following regression models were trained and compared:
 - XGBoost Regressor
 - CatBoost Regressor
 
-Evaluation metrics included:
-MAE  - Mean Absolute Error
-MSE  - Mean Squared Error
-RMSE - Root Mean Squared Error
-MAPE - Mean Absolute Percentage Error
-R² Score - Coefficient of Determination
+Evaluation metrics included:<br>
+MAE  - Mean Absolute Error<br>
+MSE  - Mean Squared Error<br>
+RMSE - Root Mean Squared Error<br>
+MAPE - Mean Absolute Percentage Error<br>
+R² Score - Coefficient of Determination<br>
 
-**7. Hyperparameter Tuning**
+**7. Hyperparameter Tuning**<br>
 Hyperparameter tuning was performed using cross-validation to improve predictive performance.
 Each model was assigned an appropriate hyperparameter search space before selecting the optimal configuration.
 
-**8. Model Comparison**
+**8. Model Comparison**<br>
 Baseline and tuned models were compared to evaluate the effectiveness of hyperparameter optimization.
 
-**9. Feature Importance**
+**9. Feature Importance**<br>
 The final model's feature importance was analysed to determine which variables contributed most to prediction accuracy.
 
-**10. Model Explainability**
+**10. Model Explainability**<br>
 SHAP was used to explain both global and local model behaviour through:
 - SHAP Feature Importance
 - SHAP Beeswarm Plot
 - SHAP Waterfall Plot
 
-These visualizations explain:
+These visualizations explain:<br>
 - which features are most influential,
 - whether they increase or decrease predictions,
 - and why a particular prediction was made.
 
-**11. Model Evaluation**
+**11. Model Evaluation**<br>
 The final model was evaluated using:
 - Residual Plot
 - Actual vs Predicted Plot
