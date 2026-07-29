@@ -217,7 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# ===========================
 # Jupyter Notebook
-# ===========================
 .ipynb_checkpoints/
+
+# CatBoost training logs
+catboost_info/

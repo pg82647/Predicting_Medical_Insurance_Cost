@@ -147,12 +147,35 @@ These diagnostics were used to assess prediction accuracy and identify potential
 
 ---
 ## Business Recommendations
-➤
-➤
-➤
-➤
-➤
-➤
+➤ **Conduct Anti-Smoking Campaigns**<br>
+From EDA outcomes and feature importance chart, smoking status was found to be the major factor that influences<br>
+medical insurance charges. SHAP analysis showed that being a smoker significantly increases one's medical insurance<br>
+charges, while being a non-smoker attracted lower medical insurance charges.<br>
+Seeing as smokers pose a risk to insurers, it is best to promote anti-smoking campaigns in order to cut the risks<br>
+associated with policies for smokers by granting discounts on policies taken if smokers would quit smoking.<br>
+This campaign could potentially lower the number of policyholders who are smokers, and also tend to reduce<br>
+medical insurance charges in future.<br
+
+➤ **Encourage Weight Management**<br>
+Body Mass Index (BMI) was the second strongest predictor of medical insurance cost.<br>
+The data showed the presence of more obese people than any other BMI category. This is an indication that<br>
+that there probably are more obese people. Higher BMI values were linked to higher medical insurance charges.<br>
+In order to help policyholders manage their medical costs, health and wellness programmes that target proper<br>
+nutrition, exercising regularly, and other healthy lifestyles should be encouraged. <br>
+with the aim to bring their weight under control.<br>
+
+➤ **Prioritize High-Risk Customer Segments**<br>
+The analysis revealed that policyholders who smoke, have a higher BMI, and are older tend to incur higher medical<br>
+insurance charges. These risk factors, particularly when they occur together, are associated with increased healthcare costs.<br>
+It is recommended that such policyholders with multiple risk factors be identified and provided with targeted preventive<br>
+healthcare programs, regular health screenings, and personalized wellness initiatives to help manage their long-term health.<br>
+
+➤ **Continuously Monitor Model Performance**<br>
+While the model achieved strong predictive performance, the residual analysis showed that a small number of high-cost<br>
+policyholders remained difficult to predict accurately, suggesting that some important factors were not captured in the dataset.<br>
+It is recommended to regularly retrain the model using updated claims data and incorporate additional features, such as<br>
+chronic conditions, medical history, and healthcare utilization, to improve predictions for high-cost cases.<br>
+Keeping the model current and enriching it with more comprehensive data can improve prediction accuracy over time and support better pricing and risk management decisions.<br>
 
 ---
 ## Visualizations
@@ -181,15 +204,74 @@ These diagnostics were used to assess prediction accuracy and identify potential
 ![SHAP Summary](images/SHAP.jpg)
 
 ---
-## Pre-Requisites
+## Prerequisites
+Before running this project, ensure you have the following installed:
+- Python 3.11 or later
+- Git
+- Jupyter Notebook or JupyterLab
+- pip (Python package manager)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/pg82647/Predicting_Medical_Insurance_Cost.git
+cd Predicting_Medical_Insurance_Cost
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+or
+
+```bash
+jupyter lab
+```
+
+Open the notebook located in the `notebook/` directory and run the cells sequentially.
 
 
 ---
 ## Repository Structure
 
+```text
+medical-insurance-cost-prediction/
+├── data/
+│   └── insurance.csv
+├── images/
+│   ├── Actual_Predicted.jpg
+│   ├── Charges.jpg
+│   ├── Feature_Importance.jpg
+│   ├── SHAP.jpg
+│   └── Smoker_Charges.jpg
+├── models/
+├── notebook/
+│   └── modeling_medical_insurance_cost.ipynb
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
 
 ---
 ## Future Improvements
-
+The following are areas where future analysis of this dataset can improve the quality and practical value of this project.<br>
+* While the best model did perform well in predicting the target, the fact that it did not do better suggests that<br>
+there may be several other features not captured in the dataset. Adding more features would greatly improve future projects.
+* It is worth noting that the dataset used contained a very small number of records. It would help future projects if<br>
+they could iclude, not just more features, but also more diverse observations.<br>
+* As technology continues to advance, so do new and more advanced algorithms. Perhaps applying more advanced algorithms<br>
+would improve results in future projects.
+* While metrics such as R², RMSE, and MAE provide a good measure of model performance, they do not capture the real-world<br>
+cost of prediction errors. Future projects could evaluate the financial impact of underestimating or overestimating<br>
+insurance charges, offering a clearer picture of the model's usefulness for pricing policies and managing risk.
 
 ---
