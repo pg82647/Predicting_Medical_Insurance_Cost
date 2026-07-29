@@ -1,7 +1,8 @@
 # Predicting Medical Insurance Costs
 
-## Overview
-Several machine learning regression models were developed and evaluated in order to predict medical insurance charges given demographic and health-related variables.
+## Projecr Overview
+This project presents a machine learning workflow for predicting medical insurance charges using demographic, lifestyle, and health-related data from the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
+The analysis includes data validation, exploratory data analysis, feature engineering, model development, hyperparameter tuning, model evaluation, and explainable AI using SHAP to interpret model predictions.<br>
 
 ---
 ## Problem statement
@@ -15,7 +16,7 @@ The main objective of this project is to determine whether medical insurance cos
 
 ---
 ## Dataset
-The data was sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
+The data was sourced from Kaggle.<br>
 It contains 1,338 records that describe policyholders through:
 | Variable | Description                                          |
 | -------- | ---------------------------------------------------- |
@@ -41,7 +42,7 @@ Performed necessary cleaning operations to improve data quality before analysis 
 **3. Feature Engineering**<br>
 Additional variables were created solely to support exploratory data analysis and were not used during model training.
 
-**4. Exploratory Data Analysis**
+**4. Exploratory Data Analysis**<br>
 **Univariate Analysis**<br>
 Explored the distribution of:
 - Age
@@ -135,5 +136,60 @@ These diagnostics were used to assess prediction accuracy and identify potential
 - XGBoost
 - LightGBM
 - SHAP
+
+---
+## Key Findings
+- Smoking status is the strongest predictor of medical insurance charges.
+- BMI and age also contribute substantially to insurance cost prediction.
+- Tree-based ensemble models outperform traditional linear regression models.
+- Hyperparameter tuning improved model performance across all ensemble methods.
+- SHAP analysis provided interpretable explanations for both individual predictions and overall model behaviour
+
+---
+## Business Recommendations
+➤
+➤
+➤
+➤
+➤
+➤
+
+---
+## Visualizations
+
+### Distribution of Charges
+
+![Insurance Charges](images/Charges.jpg)
+
+---
+### Smoking Status vs Insurance Charges
+
+![Smoker vs Charges](images/Smoker_Charges.jpg)
+
+---
+### Actual vs Predicted Values
+
+![Actual vs Predicted](images/Actual_Predicted.jpg)
+
+---
+### Feature Importance
+
+![Feature Importance](images/Feature_Importance.jpg)
+
+---
+### SHAP Summary
+![SHAP Summary](images/SHAP.jpg)
+
+---
+## Pre-Requisites
+
+
+---
+## Repository Structure
+
+
+---
+## Future Improvements
+
 
 ---
