@@ -1,6 +1,6 @@
 # Predicting Medical Insurance Costs
 
-## Projecr Overview
+## Project Overview
 This project presents a machine learning workflow for predicting medical insurance charges using demographic, lifestyle, and health-related data from the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
 The analysis includes data validation, exploratory data analysis, feature engineering, model development, hyperparameter tuning, model evaluation, and explainable AI using SHAP to interpret model predictions.<br>
 
