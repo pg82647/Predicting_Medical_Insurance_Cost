@@ -1,18 +1,20 @@
 # Predicting Medical Insurance Costs
 
 ## Project Overview
-This project presents a machine learning workflow for predicting medical insurance charges using demographic, lifestyle, and health-related data from the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
+This project presents a machine learning workflow for predicting medical insurance charges using demographic, lifestyle, and health-related data from the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) .<br>
 The analysis includes data validation, exploratory data analysis, feature engineering, model development, hyperparameter tuning, model evaluation, and explainable AI using SHAP to interpret model predictions.<br>
 
 ---
 ## Problem statement
-It is very important for insurance and healthcare organizations to accurately estimate medical insurance costs because it supports
+It is very important for insurance and healthcare organizations to accurately estimate medical insurance costs<br>
+because doing so supports:-
 - Premium estimation
 - Pricing strategies
 - Customer segmentation
 - Financial planning
 - Risk assessment<br>
-The main objective of this project is to determine whether medical insurance costs can be predicted given an individual's characteristics.
+The main objective of this project is to determine whether medical insurance costs can be predicted given an<br>
+individual's demographic and lifestyle characteristics.
 
 ---
 ## Dataset
@@ -37,10 +39,11 @@ Missing value assessment
 Duplicate record detection
 
 **2. Data Cleaning**<br>
-Performed necessary cleaning operations to improve data quality before analysis and modeling.
+Performed necessary data cleaning to improve data quality before analysis and modeling.
 
 **3. Feature Engineering**<br>
-Additional variables were created solely to support exploratory data analysis and were not used during model training.
+Additional variables were specifically created to support exploratory data analysis and<br>
+were not used during model training.
 
 **4. Exploratory Data Analysis**<br>
 **Univariate Analysis**<br>
@@ -97,14 +100,14 @@ MAPE - Mean Absolute Percentage Error<br>
 R² Score - Coefficient of Determination<br>
 
 **7. Hyperparameter Tuning**<br>
-Hyperparameter tuning was performed using cross-validation to improve predictive performance.
+Hyperparameter tuning was performed using cross-validation to improve model performance.
 Each model was assigned an appropriate hyperparameter search space before selecting the optimal configuration.
 
 **8. Model Comparison**<br>
 Baseline and tuned models were compared to evaluate the effectiveness of hyperparameter optimization.
 
 **9. Feature Importance**<br>
-The final model's feature importance was analysed to determine which variables contributed most to prediction accuracy.
+The final model's feature importance was analyzed to determine which variables contributed most to prediction accuracy.
 
 **10. Model Explainability**<br>
 SHAP was used to explain both global and local model behaviour through:
@@ -150,24 +153,26 @@ These diagnostics were used to assess prediction accuracy and identify potential
 ➤ **Conduct Anti-Smoking Campaigns**<br>
 From EDA outcomes and feature importance chart, smoking status was found to be the major factor that influences<br>
 medical insurance charges. SHAP analysis showed that being a smoker significantly increases one's medical insurance<br>
-charges, while being a non-smoker attracted lower medical insurance charges.<br>
+charges, while being a non-smoker incurred lower medical insurance charges.<br>
 Seeing as smokers pose a risk to insurers, it is best to promote anti-smoking campaigns in order to cut the risks<br>
-associated with policies for smokers by granting discounts on policies taken if smokers would quit smoking.<br>
+associated with policies for smokers by offering lower premiums or other rewards to people who quit smoking for<br>
+good could push more policyholders to actually follow through. with it.<br>
 This campaign could potentially lower the number of policyholders who are smokers, and also tend to reduce<br>
-medical insurance charges in future.<br
+medical insurance charges in future.<br>
 
 ➤ **Encourage Weight Management**<br>
 Body Mass Index (BMI) was the second strongest predictor of medical insurance cost.<br>
 The data showed the presence of more obese people than any other BMI category. This is an indication that<br>
-that there probably are more obese people. Higher BMI values were linked to higher medical insurance charges.<br>
+that there probably are more individuals in the obese BMI category than others. Higher BMI values were linked <br>
+to higher medical insurance charges.<br>
 In order to help policyholders manage their medical costs, health and wellness programmes that target proper<br>
 nutrition, exercising regularly, and other healthy lifestyles should be encouraged. <br>
-with the aim to bring their weight under control.<br>
+with the aim of helping them bring their weight under control.<br>
 
 ➤ **Prioritize High-Risk Customer Segments**<br>
 The analysis revealed that policyholders who smoke, have a higher BMI, and are older tend to incur higher medical<br>
 insurance charges. These risk factors, particularly when they occur together, are associated with increased healthcare costs.<br>
-It is recommended that such policyholders with multiple risk factors be identified and provided with targeted preventive<br>
+It is recommended that policyholders with multiple risk factors be identified and provided with targeted preventive<br>
 healthcare programs, regular health screenings, and personalized wellness initiatives to help manage their long-term health.<br>
 
 ➤ **Continuously Monitor Model Performance**<br>
@@ -263,13 +268,13 @@ medical-insurance-cost-prediction/
 
 ---
 ## Future Improvements
-The following are areas where future analysis of this dataset can improve the quality and practical value of this project.<br>
-* While the best model did perform well in predicting the target, the fact that it did not do better suggests that<br>
+Future work could improve the quality and practical value of this project by:<br>
+* While the best model did perform well in predicting the target, even though the model performed well, suggests that<br>
 there may be several other features not captured in the dataset. Adding more features would greatly improve future projects.
 * It is worth noting that the dataset used contained a very small number of records. It would help future projects if<br>
-they could iclude, not just more features, but also more diverse observations.<br>
+they could include, not just more features, but also more diverse observations.<br>
 * As technology continues to advance, so do new and more advanced algorithms. Perhaps applying more advanced algorithms<br>
-would improve results in future projects.
+may further improve performance in future projects.
 * While metrics such as R², RMSE, and MAE provide a good measure of model performance, they do not capture the real-world<br>
 cost of prediction errors. Future projects could evaluate the financial impact of underestimating or overestimating<br>
 insurance charges, offering a clearer picture of the model's usefulness for pricing policies and managing risk.
